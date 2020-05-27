@@ -1,5 +1,9 @@
 package com.yh.mall.mgb.model;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * @author YangHao
  * @ClassName: PmsBrand
@@ -14,23 +18,23 @@ public class PmsBrand {
     private Long id;
 
     private String name;
-    //首字母
+    @ApiModelProperty("首字母")
     private String firstLetter;
 
     private Integer sort;
-    //是否为品牌制造商
+    @ApiModelProperty("是否为品牌制造商: 0->不是；1->是")
     private Integer factoryStatus;
 
     private Integer showStatus;
-    //产品数量
+    @ApiModelProperty("产品数量")
     private Integer productCount;
-    //产品评论数量
+    @ApiModelProperty("产品评论数量")
     private Integer productCommentCount;
-    //品牌logo
+    @ApiModelProperty("品牌logo")
     private String logo;
-    //专区大图
+    @ApiModelProperty("专区大图")
     private String bigpic;
-    //品牌故事
+    @ApiModelProperty("品牌故事")
     private String brandStory;
 
 
